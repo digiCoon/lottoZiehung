@@ -1,0 +1,51 @@
+Programmiere ein Lotto-Spiel, das folgende Anforderungen erfüllt:
+
+1. Grundfunktionen
+   1.1 Ziehung der Lottozahlen
+   1.2 Abgeben eines Tipps durch den User
+   1.3 Auswertung der Anzahl der richtig getippten Zahlen
+
+2. Unterschiedliche Formen der Verabschiedung
+   2.1 Gratulation im Gewinnfall
+   2.2 Tröstliche Worte, falls verloren
+
+3. Hinweis (Vereinfachungen)
+   - Aus Gründen der Einfachheit:
+     - Wir verzichten auf die Zusatzzahl.
+     - Wir verzichten darauf, die Gewinnklassen anhand von mathematisch korrekten Verfahren zu errechnen.
+
+4. Anforderungen im Detail
+
+   4.1 Benutzer-Eingabe
+   - Eingabe von 6 Zahlen durch den Benutzer
+   - Zahlenbereich: 1–49 (inklusive)
+   - Jede Zahl darf NUR EINMAL auftauchen.
+
+   4.2 Ziehung der Lottozahlen
+   - Ziehung von 6 Zufallszahlen
+   - Zahlenbereich: 1–49 (inklusive)
+   - Jede Zahl darf NUR EINMAL auftauchen.
+
+   4.3 Auswertung
+   - Ausgabe der gezogenen Zahlen
+   - Ausgabe der getippten Zahlen
+   - Zählen der richtigen Tipps
+
+5. Gewinnklassen und Ausgaben
+   - Gewinnklassen werden willkürlich festgelegt.
+   - Entsprechend der Anzahl der richtigen Tipps sollen verschiedene Ansprachen ausgegeben werden, z.B.:
+
+     - 0–1 Richtige
+       → Kein Gewinn. Schade.
+
+     - 2–3 Richtige
+       → Ein kleiner Gewinn.
+
+     - 4–5 Richtige
+       → Ein größerer Gewinn.
+
+     - 6 Richtige
+       → Der Hauptgewinn:
+         - Lotto-Millionär!
+
+   - Lass dir passende, individuelle Ansprachen für jede Gewinnklasse einfallen.
