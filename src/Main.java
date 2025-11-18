@@ -9,7 +9,7 @@ public class Main {
         var userNums = new int[6];
         int hitCount = 0;
 
-        System.out.println("Bitte gib 6 Lottozahlen ein (1–49):");
+        System.out.println("Bitte gib 6 Lottozahlen ein (1–49).");
 
         // Eingabe Lottozahlen
         for(int i = 0; i <= 5; i++) {
@@ -18,17 +18,17 @@ public class Main {
                 // Prüfung nach doppelter Eingabe
                 for(int j = 0; j < i; j++) {
                     if(userNums[i] == userNums[j]){
-                        System.out.println("Diese Zahl hast du schon eingegeben!");
+                        System.out.println("Diese Zahl hast du schon eingegeben! Versuche es erneut.");
                         i--;
                     }
                 }
                 // Prüfung ob korrekter Bereich
                 if(userNums[i] < 1 || userNums[i] > 49){
-                    System.out.println("Ungültig! Die Zahl muss zwischen 1 und 49 liegen.");
+                    System.out.println("Ungültig! Die Zahl muss zwischen 1 und 49 liegen. Versuche es erneut.");
                     i--;
                 }
             } catch (InputMismatchException e) {
-                System.out.println("Bitte nur gültige Zahlen eingeben (1–49). Versuche es erneut:");
+                System.out.println("Bitte nur gültige Zahlen eingeben (1–49). Versuche es erneut.");
                 scan.nextLine();
                 i--;
             }
@@ -59,7 +59,7 @@ public class Main {
         }
         System.out.println("Anzahl richtiger Treffer: " + hitCount);
 
-        if(hitCount == 0 || hitCount == 1){
+        if(hitCount <= 1){
             System.out.println("Keine Übereinstimmung. Vielleicht klappt’s beim nächsten Mal!");
         } else if (hitCount == 2 || hitCount == 3) {
             System.out.println("Glückwunsch! Ein kleiner Gewinn ist drin!");
